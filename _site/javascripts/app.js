@@ -787,7 +787,7 @@ jQuery(document).foundation();
     onBinding: function() {
       var $ctx = this.$ctx;
 
-      var show_dots = true;
+      var show_dots = false;
 
       if ($ctx.hasClass('simple')) {
         show_dots = false;
@@ -795,7 +795,7 @@ jQuery(document).foundation();
 
       $('.items', $ctx).slick({
         autoplay: true,
-        pauseOnHover: false,
+        pauseOnHover: true,
         dots: show_dots,
         speed: 1500,
         arrows: false
