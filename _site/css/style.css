@@ -1188,7 +1188,7 @@ body.screenshot {
 
 .modBoxedSlider .slick-dots li button:before {
   font-size: 30px;
-  top: -40px;
+  top: 0px;
 }
 .modBoxedSlider .slide {
   position: relative;
