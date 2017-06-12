@@ -246,6 +246,7 @@ jQuery(document).foundation();
     }
   })
 })(Tc.$);
+// this one is for the portfolio item pages
 (function($) {
   Tc.Module.BoxedSlider = Tc.Module.extend({
     init: function($ctx, sandbox, modId) {
@@ -261,7 +262,7 @@ jQuery(document).foundation();
         autoplay: true,
         pauseOnHover: true,
         dots: true,
-        speed: 1500,
+        speed: 3000,
         arrows: false
       });
 
@@ -776,6 +777,7 @@ jQuery(document).foundation();
     }
   })
 })(Tc.$);
+// this is the one for the about page quotes
 (function($) {
   Tc.Module.Testimonials = Tc.Module.extend({
     init: function($ctx, sandbox, modId) {
@@ -787,7 +789,7 @@ jQuery(document).foundation();
     onBinding: function() {
       var $ctx = this.$ctx;
 
-      var show_dots = false;
+      var show_dots = true;
 
       if ($ctx.hasClass('simple')) {
         show_dots = false;
@@ -797,7 +799,7 @@ jQuery(document).foundation();
         autoplay: true,
         pauseOnHover: true,
         dots: show_dots,
-        speed: 1500,
+        speed: 3000,
         arrows: false
       });
 
